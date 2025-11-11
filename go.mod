@@ -1,4 +1,4 @@
-module jo87jimmy/funcGoPackage
+module github.com/jo87jimmy/funcGoPackage
 
 go 1.25.3
 
