@@ -8,7 +8,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
-func ValidationEnhanceParams(c echo.Context, params ...string) map[string]string {
+func RequestParams(c echo.Context, params ...string) map[string]string {
 	pargs := map[string]string{}
 
 	for _, arg := range params {
