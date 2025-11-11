@@ -8,6 +8,7 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
+// 從 echo context 取得 query 或 form 的參數
 func RequestParams(c echo.Context, params ...string) map[string]string {
 	pargs := map[string]string{}
 
@@ -23,6 +24,7 @@ func RequestParams(c echo.Context, params ...string) map[string]string {
 	return pargs
 }
 
+// 將 struct 或 map 轉為 ORM Where 條件
 func OrmWhereParams(input any, SQLTable any) map[string]any {
 	output := make(map[string]any, 100)
 	v := reflect.ValueOf(input)
